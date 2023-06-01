@@ -1,131 +1,359 @@
-body{
+*{
     margin: 0;
     padding: 0;
-    background-color: #088395;
-    background-size: cover;
-}    
 
-.box{
-    margin: auto;
-    padding: 50px;
-    width: 450px;
-    text-align: center;
-    background-color: #0A4D68;
-    margin-top: 5%;
-    border-radius: 10%;
-    color: #fff;
 }
-.box1{
-    margin: auto;
-    padding: 50px;
-    width: 450px;
-    text-align: left;
-    background-color: #0A4D68;
-    margin-top: 5%;
-    border-radius: 10%;
-    color: #fff;
-    letter-spacing: 1px;
+
+.row{
+    background-color: #9DB2BF;
 }
-.btn{
-    text-align: center !important;
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
-.b
-.box img{
-    transition: 10s;
-    cursor: pointer;
+
+#wrapper.toggled {
+    padding-left: 250px;
 }
-.box img:hover{
-    transform: scale(0.9);
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #526D82;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
-.box h1{
-    font-size: 40px;
-    letter-spacing: 3px;
-    font-weight: bold;
-    margin-bottom: 10px;
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
 }
-.box h5{
-    font-size: 20px;
-    letter-spacing: 3px;
-    font-weight: bold;
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
 }
-.box p{
-    margin-top: 10px;
-    letter-spacing: 2px;
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
 }
-.box i{
-    width: 20px;
-}
-ul{
+
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
-.box li a{
+
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.logo{
+    border-radius: 50%;
+    border: #fff 3px solid;
+    width: 190px;
+    margin: 30px;
+}
+.mobillogo {
+    display: none;
+    border-radius: 50%;
+    border: #fff 3px solid;
+    width: 190px;
+    margin: 30px;
+}
+#navbarHeader{
     color: #fff;
+    font-size: 29px;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    margin: 10px;
+    transition: all 0.5s ease;
+}
+#navbarHeader:hover{
+    color: #27374D;
+    font-size: 29px;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    margin: 10px;
+}
+.personalHeader{
+    color:brown; 
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 90px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.skillsHeader{
+    color:#E57C23; 
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.personalEdHeader{
+    color:#8B1874; 
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.hobbiestsHeader{
+    color:#00DFA2; 
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contactHeader{
+    color:#DF2E38; 
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.projectsHeader{
+    color:#11009E; 
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.schoolInfo{
+    color: #F9F5F6;
+    margin-bottom: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+}
+.navbarName{
+    color: #F9F5F6;
+    text-align: center;
+    font-family: 'Caveat', cursive;
     font-size: 40px;
-    padding: 12px;
-    transition: all ease-in-out 250ms;
 }
-.box li a:hover{
-    color: #FF6969
+.personalInformation{
+    color: #F9F5F6;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    list-style: none;
 }
-.flip-card{
-    width: 450px;
-    margin: auto;
+.name{
+    color: #F9F5F6;
+    font-size: 40px;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    list-style: none;
+    margin-bottom: 20px;
 }
-.flip-card-back{
-    background-color: #0A4D68;
-    color: #fff;
-    transform: rotateY(180deg);
+.skillLogo{
+    width: 80px;
+    transition: all 0.5s ease;
 }
-.flip-card-back .back-header{
-    height: 45%;
+.horizontal-list {
+    display: flex;
+    list-style: none;
+}
+  
+.horizontal-list li {
+    margin-right: 20px; /* İstediğiniz boşluğu ayarlayabilirsiniz */
+}
+.horizontal-list li:first-child {
+    margin-left: 350px; /* İstediğiniz boşluğu ayarlayabilirsiniz */
+}
+.skillLogo:hover{
+    width: 90px;
+
+}
+.listeSkills{
+    color: #F9F5F6;
+    font-size: 30px;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+
+.slideImg{
+    width: 200px !important;
+    align-items: center;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+.slideH5{
+    font-size: 30px;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 50px !important;
+    color: #27374D !important;
+    font-weight: 800 !important;
+    -webkit-text-stroke: 1px #fff;
+}
+.slideP{
+    font-size: 30px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #27374D !important;
+    font-weight: 800 !important;
+    -webkit-text-stroke: 1px #fff;
+}
+.hobbiesImg{
+    width: 100px;
+    margin: 15px;
+}
+.hobbiesH5{
+    font-size: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #F9F5F6;
+    margin: 20px;
+}
+.hobbiesList{
+    list-style: none;
+    display: flex;
+}
+
+  
+.hobbiesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.hobbiesList li {
+    flex: 0 0 200px;
+    margin: 20px;
     text-align: center;
 }
-.flip-card-inner{
-    position: relative;
-    height: 100%;
-    transition: transform 1.22s;
-    transform-style: preserve-3d;
+.contactImg{
+    width: 50px;
+    transition: all 0.5s ease;
 }
-.flip-card-back,
-.flip-card-front{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
+.contactList{
+    list-style: none;
+    display: flex;
 }
-.flip-card.flip .flip-card-inner{
-    transform: rotateY(180deg);
+.contactList li {
+    margin-right: 40px; /* İstediğiniz boşluğu ayarlayabilirsiniz */
 }
-.box li div i{
-    font-size: 40px;
-    padding: 12px;
-    transition: all ease-in-out 250ms;
+.contactList li:first-child {
+    margin-left: 400px; /* İstediğiniz boşluğu ayarlayabilirsiniz */
 }
-.box li div i:hover{
-    color: #FF6969
+.contactImg:hover{
+    width: 90px;
+
 }
-.flip-card-back h1 label{
-    letter-spacing: 2px;
-}
-.btn{
-    margin-top: 20px;
-}
+.box1 {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
 .backLabel{
-    text-align: left !important;
-    margin-bottom: 7px;
-    margin-top: 7px;
     font-size: 15px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #F9F5F6;
+
 }
-.flip-card-back div i{
-    margin-left: 300px;
-    margin-top:10px;
-    font-size: 40px;
-    transition: all ease-in-out 250ms;
+.contactH1{
+    font-size: 30px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #F9F5F6;
 }
-.flip-card-back div i:hover{
-    color: #FF6969;
+
+
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+
 }
-.btn{
-    text-align: center !important;
-}
+@media screen and (max-width: 768px) {
+    body{
+        padding-right: 70px !important;
+        background-color: #9DB2BF !important;
+    }
+    .contactList li:first-child {
+      margin-left: 0; 
+    }
+    .horizontal-list li:first-child {
+        margin-left: 0; 
+      }
+      .contactImg{
+        width: 40px;
+        transition: all 0.5s ease;
+    }
+    .skillLogo{
+        width: 40px;
+        transition: all 0.5s ease;
+    }
+    .contactList li {
+        margin-right: 10px; 
+    }
+    .horizontal-list li {
+        margin-right: 10px; 
+    }
+    .form-control{
+        width: 250px !important;
+    }
+    .mobillogo {
+        display: block; 
+      }
+      .row{
+        padding-left: 0 !important;
+      }
+
+      .row>* {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+
+    }
+  }
