@@ -4,3 +4,7 @@ In this project, I tried to create my own website which is like a CV. There is m
 And here there is the example website: 
 
 bayramcinar.rf.gd
+
+---------------------------------------------Here Photo-----------------------------------------------------
+
+![image](https://github.com/bayramcinar/personalWebsite/assets/99193151/c4996feb-a797-44e7-8f55-faf0394912d5)
