@@ -5,6 +5,7 @@ And here there is the example website:
 
 bayramcinar.rf.gd
 
----------------------------------------------Here Photo-----------------------------------------------------
+<h1 style="text-decoration: overline;">Here Photo</h1>
+<img src="https://github.com/bayramcinar/personalWebsite/assets/99193151/c4996feb-a797-44e7-8f55-faf0394912d5" style="width: 800px;">
 
-![image](https://github.com/bayramcinar/personalWebsite/assets/99193151/c4996feb-a797-44e7-8f55-faf0394912d5)
+
